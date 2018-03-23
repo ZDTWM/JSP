@@ -17,7 +17,7 @@
  	words.add("great");
  	words.add("day");
  %>
- 
+
  <table width="200px" align="center" border="1" cellspacing="0">
  	<%for (String word : words) {%>
  		<tr>
@@ -25,5 +25,13 @@
  		</tr>
  	<%} %>
  </table>
+ 
+ <%--指令include --%>
+ <%@include file="footer.jsp" %>
+
+ <%--动作include --%>
+ <jsp:include page="footer.jsp"/>
+
+ 
  
  
